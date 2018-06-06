@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.sonatype.mavenbook</groupId>
+  <artifactId>simple_java</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0</version>
+  <name>simple_java</name>
+  <url>http://maven.apache.org</url>
+  <distributionManagement>
+  <repository>
+  <id>releases</id>
+  <url>http://localhost:8080/nexus-2.14.8-01/content/repositories/releases/</url>
+  </repository>
+  <snapshotRepository>
+  <id>snapshots</id>
+  <url>http://localhost:8080/nexus-2.14.8-01/content/repositories/releases/</url>
+  </snapshotRepository>
+</distributionManagement>
+    <scm>
+        <connection>scm:svn:https://github.com/nalluriavinash5/man_repo</connection>
+        <developerConnection>scm:svn:https://github.com/nalluriavinash5/man_repo</developerConnection>
+    </scm>
+  <dependencies>
+    <dependency>
+  <groupId>org.apache.maven.release</groupId>
+  <artifactId>maven-release-manager</artifactId>
+  <version>2.5.3</version>
+  </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
